@@ -1,7 +1,13 @@
 package com.cashcarlson.VisualSortCMD;
 
 /**
- *
+ * SortArray.java is made to create the array for it's planned algorithms
+ * It also handles printing the array for the user and sending the array
+ * to send the array.
+ * 
+ * TO DO:
+ * -Create helper methods for better maintainable code
+ * 
  * @author Cash Carlson
  */
 public class SortArray {
