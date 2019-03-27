@@ -1,4 +1,4 @@
-package com.cashcarlson.VisualSortCMD;
+	package com.cashcarlson.VisualSortCMD;
 
 import java.util.Scanner;
 
