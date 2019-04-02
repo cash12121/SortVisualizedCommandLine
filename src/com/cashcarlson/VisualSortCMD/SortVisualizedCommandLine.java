@@ -3,7 +3,11 @@
 import java.util.Scanner;
 
 /**
- * SortVisualizeCommandLine.java is the main method to run the program for
+ * Name: SortVisualizeCommandLine.java
+ * Date: 2019-03-20
+ * Description:
+ * 
+ * SortVisualizeCommandLine is the main method to run the program for
  * the command line visualizer
  * It's made to handle user input, the main menu, and call methods.
  * 
@@ -14,15 +18,15 @@ public class SortVisualizedCommandLine {
 	//Making a scanner object for user input later.
 	Scanner scan = new Scanner(System.in);
 	
-	//Making SortArray object to create and print the array later.
-	SortArray sArray = new SortArray();
-	
 	//Creating userInput variable for scanner later.
 	int userInput;
 		
 	do {
+	    SortArray sArray = new SortArray();
+	    
             System.out.println("\n*** MENU ***");
             System.out.println("1. Bubble Sort");
+	    System.out.println("2. Insertion Sort");
             System.out.println("5. Quit");
             System.out.print("\nPlease make a choice: ");
             
@@ -37,6 +41,15 @@ public class SortVisualizedCommandLine {
 		    bSort.getClass();
 		    System.out.println(sArray.printArray());
                     break;
+		case 2:
+		    System.out.println("\nStarting Insertion Sort...\n");
+		    System.out.println("\nOriginal Array:\n");
+		    System.out.println(sArray.printArray());
+		    InsertionSort iSort = new InsertionSort(sArray.sendArray());
+		    iSort.getClass();
+		    System.out.println("\nSorted Array:\n" + 
+			    sArray.printArray());
+		    break;
                 case 5:
                     System.out.println("Thank you for using my program.");
                     break;

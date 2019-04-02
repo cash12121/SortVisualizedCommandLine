@@ -1,9 +1,11 @@
 package com.cashcarlson.VisualSortCMD;
 
 /**
- * This is a class called BubbleSort
- * It's made to the process of bubble sort
- * Bubble sort compares the adjacent pair in the Array
+ * Name: BubbleSort.java
+ * Date: 2019-03-20
+ * Description:
+ * 
+ * BubbleSort compares the adjacent pair in the Array
  * It checks if it's current number is bigger than the pair
  * If it's not bigger than it's pair it moves on to the next number in the array
  * it repeats this process until the Array is sorted
